@@ -4,7 +4,7 @@ By the end of this assignment you will have a fully serviceable CRUD API with us
 
 ## All Students
 
-Build an API endpoint of `http://127.0.0.1:8000/api/v1/students/` that will return all students inside the the database in the following format:
+Build an API endpoint of `http://127.0.0.1:8000/api/v1/students/` with the name of `all_students`, that will return all students inside the the database in the following format:
 
 ```json
 [
@@ -269,7 +269,7 @@ Build an API endpoint of `http://127.0.0.1:8000/api/v1/students/` that will retu
 
 ## All Subjects
 
-Build an API endpoint of `http://127.0.0.1:8000/api/v1/subjects/` that will return all subjects inside the the database in the following format:
+Build an API endpoint of `http://127.0.0.1:8000/api/v1/subjects/` with the name of `all_subjects`, that will return all subjects inside the the database in the following format:
 
 ```json
 [
@@ -321,3 +321,11 @@ Delete all the test files inside of each individual application. Add the `tests`
 ## Considerations
 
 You just made some changes to your student model, meaning you may have to adjust your tests regarding `serializers` to match the new output. Ensure to write serializers and validators to the best of your ability
+
+## Tasks
+
+- Create and/or Update Serializers to return the correct Data
+- Ensure test 18 and 19 of test_models.py are passing (confirms serializers are returning the proper data)
+- Create app urls.py files with url patterns and paths
+- Create APIViews for GET requests that will Respond with the correct serialized data
+- Ensure url paths contain the proper url pattern, Class Based View (as_view()), and name
