@@ -1,4 +1,4 @@
-# School API VI
+# School API VII
 
 By the end of this assignment you will have a fully serviceable CRUD API with user authentication capabilities that will allow School staff to easily manage students and scholastic equipment.
 
