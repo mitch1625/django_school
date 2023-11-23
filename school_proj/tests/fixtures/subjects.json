@@ -4,14 +4,14 @@
     "pk": 1,
     "fields": {
       "subject_name": "Python",
-      "professor": "Professor Cahan"
+      "professor": "Professor Adam"
     }
   },
   {
     "model": "subject_app.subject",
     "pk": 2,
     "fields": {
-      "subject_name": "JavaScript",
+      "subject_name": "Javascript",
       "professor": "Professor Zaynab"
     }
   },
@@ -19,15 +19,15 @@
     "model": "subject_app.subject",
     "pk": 3,
     "fields": {
-      "subject_name": "Ruby",
-      "professor": "Professor Ben"
+      "subject_name": "C#",
+      "professor": "Professor Benjamin"
     }
   },
   {
     "model": "subject_app.subject",
     "pk": 4,
     "fields": {
-      "subject_name": "Management",
+      "subject_name": "History",
       "professor": "Professor Nick"
     }
   },
@@ -35,40 +35,8 @@
     "model": "subject_app.subject",
     "pk": 5,
     "fields": {
-      "subject_name": "React",
-      "professor": "Professor Naranjo"
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 6,
-    "fields": {
-      "subject_name": "Django",
-      "professor": "Professor Corozco"
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 7,
-    "fields": {
-      "subject_name": "Csharp",
-      "professor": "Professor Zack"
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 8,
-    "fields": {
-      "subject_name": "Physical Education",
-      "professor": "Professor Dennis"
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 9,
-    "fields": {
-      "subject_name": "Science",
-      "professor": "Professor Alex"
+      "subject_name": "Philosophy",
+      "professor": "Professor Avila"
     }
   }
-]
+  ]
