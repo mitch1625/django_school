@@ -1,61 +1,28 @@
-# School API VII
+# School API VIII
 
 By the end of this assignment you will have a fully serviceable CRUD API with user authentication capabilities that will allow School staff to easily manage students and scholastic equipment.
 
-## A Students
+## School API Front End
 
-Build an API endpoint of `http://127.0.0.1:8000/api/v1/students/3/` with the name of `a_students`, that will return a students inside the the database in the following format or a 404 Response:
-
-```json
-{
-  "name": "Francisco R. Avila",
-  "student_email": "francisco@school.com",
-  "personal_email": "francisco@gmail.com",
-  "locker_number": 1,
-  "locker_combination": "12-12-12",
-  "good_student": true,
-  "subjects": [
-    {
-      "subject_name": "Python",
-      "professor": "Professor Adam",
-      "students": 6,
-      "grade_average": 54.05
-    }
-  ]
-}
-```
-
-## A Subjects
-
-Build an API endpoint of `http://127.0.0.1:8000/api/v1/subjects/python/` with the name of `a_subjects`, that will return a subjects inside the the database in the following format or a 404 Response:
-
-```json
-{
-  "subject_name": "Python",
-  "professor": "Professor Adam",
-  "students": 6,
-  "grade_average": 54.05
-}
-```
-
-## Running Tests
-
-Delete all the test files inside of each individual application. Add the `tests` folder inside of this repository to your projects ROOT directory.
-
-```bash
-  python manage.py test tests
-```
-
-- `.` means a test passed
-- `E` means an unhandled error populated on a test
-- `F` means a test completely failed to run
-
-## Considerations
-
-Consider utilizing django shortcuts for querying the database and automatically returning a 404 response if the query returns None.
+In this assignment you will construct a Vite + React.js Front-End application that will communicate with the Django School API to generate a friendly user interface.
 
 ## Tasks
 
-- Update app urls.py files with url patterns and paths
-- Create APIViews for GET requests that will Respond with the correct serialized data
-- Ensure url paths contain the proper url pattern, Class Based View (as_view()), and name
+- Create a HomePage.jsx that will give users a welcome message to your school portal
+- Create a SubjectsPage.jsx that will give users all information matching the Django API response from `http://127.0.0.1:8000/api/v1/subjects/` with a link to each individual subject.
+- Create an ASubjectPage.jsx that will give users all information matching the Django API response from `http://127.0.0.1:8000/api/v1/subjects/<str:subject>/`.
+- Create a StudentsPage.jsx that will give users all information matching the Django API response from `http://127.0.0.1:8000/api/v1/students/` with a link to each individual student.
+- Create an AStudentPage.jsx that will give users all information matching the Django API response from `http://127.0.0.1:8000/api/v1/students/<int:id>/`.
+- Create and Connect a Browser Router to your React Application to render each page on their own route.
+- Create and Connect a Navigation Bar to give users the ability to move between pages
+
+## Tools and Dependencies to Consider
+
+- Vite + React
+  - axios
+  - React Hooks
+  - React Browser Router
+  - Browser Router Hooks
+
+- Django API
+  - CORS
