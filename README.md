@@ -8,383 +8,301 @@ Build an API endpoint of `http://127.0.0.1:8000/api/v1/students/` that will retu
 
 ```json
 [
-  {
-    "model": "student_app.student",
-    "pk": 1,
-    "fields": {
-      "name": "Johnny H. Miller",
-      "student_email": "johnny@school.com",
-      "personal_email": "johnny@gmail.com",
-      "locker_number": 1,
-      "locker_combination": "12-12-12",
-      "good_student": true,
-      "subjects": [
-        {
-          "model": "subject_app.subject",
-          "pk": 1,
-          "fields": {
-            "subject_name": "Python",
-            "professor": "Mr. Cahan",
-            "grade": 98.77
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 2,
-          "fields": {
-            "subject_name": "JavaScript",
-            "professor": "Mrs. Zaynab",
-            "grade": 0.0
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 3,
-          "fields": {
-            "subject_name": "Ruby",
-            "professor": "Mr. Ben",
-            "grade": 0.0
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 4,
-          "fields": {
-            "subject_name": "Management",
-            "professor": "Mr. Nick",
-            "grade": 0.0
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 5,
-          "fields": {
-            "subject_name": "React",
-            "professor": "Mrs. Naranjo",
-            "grade": 0.0
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 6,
-          "fields": {
-            "subject_name": "Django",
-            "professor": "Mrs. Corozco",
-            "grade": 0.0
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 7,
-          "fields": {
-            "subject_name": "Csharp",
-            "professor": "Mr. Zack",
-            "grade": 0.0
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 8,
-          "fields": {
-            "subject_name": "Physical Education",
-            "professor": "Mr. Dennis",
-            "grade": 0.0
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "student_app.student",
-    "pk": 2,
-    "fields": {
-      "name": "Michelle B. Maraca",
-      "student_email": "michelle@school.com",
-      "personal_email": "michelle@gmail.com",
-      "locker_number": 110,
-      "locker_combination": "12-12-12",
-      "good_student": true,
-      "subjects": [
-        {
-          "model": "subject_app.subject",
-          "pk": 2,
-          "fields": {
-            "subject_name": "JavaScript",
-            "professor": "Mrs. Zaynab",
-            "grade": 33.55
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 6,
-          "fields": {
-            "subject_name": "Django",
-            "professor": "Mrs. Corozco",
-            "grade": 0.0
-          }
-        },
-        {
-          "model": "subject_app.subject",
-          "pk": 7,
-          "fields": {
-            "subject_name": "Csharp",
-            "professor": "Mr. Zack",
-            "grade": 0.0
-          }
-        }
-      ]
-    }
-  }
+    {
+        "name": "Francisco R. Avila",
+        "student_email": "francisco@school.com",
+        "personal_email": "francisco@gmail.com",
+        "locker_number": 1,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "Python",
+                "professor": "Professor Adam",
+                "students": 6,
+                "grade_average": 54.05,
+            }
+        ],
+    },
+    {
+        "name": "Adam B. Cahan",
+        "student_email": "adam@school.com",
+        "personal_email": "adam@gmail.com",
+        "locker_number": 2,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "Python",
+                "professor": "Professor Adam",
+                "students": 6,
+                "grade_average": 54.05,
+            },
+            {
+                "subject_name": "Javascript",
+                "professor": "Professor Zaynab",
+                "students": 4,
+                "grade_average": 41.33,
+            },
+            {
+                "subject_name": "C#",
+                "professor": "Professor Benjamin",
+                "students": 6,
+                "grade_average": 42.54,
+            },
+        ],
+    },
+    {
+        "name": "This I. Zaynab",
+        "student_email": "zaynab@school.com",
+        "personal_email": "zaynab@gmail.com",
+        "locker_number": 3,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "C#",
+                "professor": "Professor Benjamin",
+                "students": 6,
+                "grade_average": 42.54,
+            },
+            {
+                "subject_name": "History",
+                "professor": "Professor Nick",
+                "students": 5,
+                "grade_average": 25.39,
+            },
+            {
+                "subject_name": "Philosophy",
+                "professor": "Professor Avila",
+                "students": 5,
+                "grade_average": 51.37,
+            },
+        ],
+    },
+    {
+        "name": "Tanjaro D. Kamado",
+        "student_email": "tanjaro@school.com",
+        "personal_email": "tanjaro@gmail.com",
+        "locker_number": 4,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "Javascript",
+                "professor": "Professor Zaynab",
+                "students": 4,
+                "grade_average": 41.33,
+            },
+            {
+                "subject_name": "C#",
+                "professor": "Professor Benjamin",
+                "students": 6,
+                "grade_average": 42.54,
+            },
+            {
+                "subject_name": "History",
+                "professor": "Professor Nick",
+                "students": 5,
+                "grade_average": 25.39,
+            },
+        ],
+    },
+    {
+        "name": "Mark M. Grayson",
+        "student_email": "mark@school.com",
+        "personal_email": "mark@gmail.com",
+        "locker_number": 5,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "Python",
+                "professor": "Professor Adam",
+                "students": 6,
+                "grade_average": 54.05,
+            },
+            {
+                "subject_name": "C#",
+                "professor": "Professor Benjamin",
+                "students": 6,
+                "grade_average": 42.54,
+            },
+            {
+                "subject_name": "Philosophy",
+                "professor": "Professor Avila",
+                "students": 5,
+                "grade_average": 51.37,
+            },
+        ],
+    },
+    {
+        "name": "Ash A. Katchum",
+        "student_email": "ash@school.com",
+        "personal_email": "ash@gmail.com",
+        "locker_number": 6,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "Python",
+                "professor": "Professor Adam",
+                "students": 6,
+                "grade_average": 54.05,
+            },
+            {
+                "subject_name": "Javascript",
+                "professor": "Professor Zaynab",
+                "students": 4,
+                "grade_average": 41.33,
+            },
+            {
+                "subject_name": "C#",
+                "professor": "Professor Benjamin",
+                "students": 6,
+                "grade_average": 42.54,
+            },
+        ],
+    },
+    {
+        "name": "Nezuko M. Kamato",
+        "student_email": "nezuko@school.com",
+        "personal_email": "nezuko@gmail.com",
+        "locker_number": 7,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "C#",
+                "professor": "Professor Benjamin",
+                "students": 6,
+                "grade_average": 42.54,
+            },
+            {
+                "subject_name": "History",
+                "professor": "Professor Nick",
+                "students": 5,
+                "grade_average": 25.39,
+            },
+            {
+                "subject_name": "Philosophy",
+                "professor": "Professor Avila",
+                "students": 5,
+                "grade_average": 51.37,
+            },
+        ],
+    },
+    {
+        "name": "Monkey D. Luffy",
+        "student_email": "monkey@school.com",
+        "personal_email": "monkey@gmail.com",
+        "locker_number": 8,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "Python",
+                "professor": "Professor Adam",
+                "students": 6,
+                "grade_average": 54.05,
+            },
+            {
+                "subject_name": "History",
+                "professor": "Professor Nick",
+                "students": 5,
+                "grade_average": 25.39,
+            },
+            {
+                "subject_name": "Philosophy",
+                "professor": "Professor Avila",
+                "students": 5,
+                "grade_average": 51.37,
+            },
+        ],
+    },
+    {
+        "name": "Monkey D. Ace",
+        "student_email": "ace@school.com",
+        "personal_email": "ace@gmail.com",
+        "locker_number": 9,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "History",
+                "professor": "Professor Nick",
+                "students": 5,
+                "grade_average": 25.39,
+            }
+        ],
+    },
+    {
+        "name": "Nick M. Smith",
+        "student_email": "nick@school.com",
+        "personal_email": "nick@gmail.com",
+        "locker_number": 10,
+        "locker_combination": "12-12-12",
+        "good_student": true,
+        "subjects": [
+            {
+                "subject_name": "Python",
+                "professor": "Professor Adam",
+                "students": 6,
+                "grade_average": 54.05,
+            },
+            {
+                "subject_name": "Javascript",
+                "professor": "Professor Zaynab",
+                "students": 4,
+                "grade_average": 41.33,
+            },
+            {
+                "subject_name": "Philosophy",
+                "professor": "Professor Avila",
+                "students": 5,
+                "grade_average": 51.37,
+            },
+        ],
+    },
 ]
 ```
 
 ## All Subjects
 
-Build an API enpoint of `http://127.0.0.1:8000/api/v1/subjects/` that will return all subjects inside the the database in the following format:
+Build an API endpoint of `http://127.0.0.1:8000/api/v1/subjects/` that will return all subjects inside the the database in the following format:
 
 ```json
 [
-  {
-    "model": "subject_app.subject",
-    "pk": 1,
-    "fields": {
-      "subject_name": "Python",
-      "professor": "Mr. Cahan",
-      "grade_average": 98.77,
-      "students": [
-        {
-          "model": "student_app.student",
-          "pk": 1,
-          "fields": {
-            "name": "Johnny H. Miller",
-            "student_email": "johnny@school.com",
-            "personal_email": "johnny@gmail.com",
-            "locker_number": 1,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [1, 2, 3, 4, 5, 6, 7, 8]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 2,
-    "fields": {
-      "subject_name": "JavaScript",
-      "professor": "Mrs. Zaynab",
-      "grade_average": 33.55,
-      "students": [
-        {
-          "model": "student_app.student",
-          "pk": 1,
-          "fields": {
-            "name": "Johnny H. Miller",
-            "student_email": "johnny@school.com",
-            "personal_email": "johnny@gmail.com",
-            "locker_number": 1,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [1, 2, 3, 4, 5, 6, 7, 8]
-          }
-        },
-        {
-          "model": "student_app.student",
-          "pk": 2,
-          "fields": {
-            "name": "Michelle B. Maraca",
-            "student_email": "michelle@school.com",
-            "personal_email": "michelle@gmail.com",
-            "locker_number": 110,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [2, 6, 7]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 3,
-    "fields": {
-      "subject_name": "Ruby",
-      "professor": "Mr. Ben",
-      "grade_average": 0,
-      "students": [
-        {
-          "model": "student_app.student",
-          "pk": 1,
-          "fields": {
-            "name": "Johnny H. Miller",
-            "student_email": "johnny@school.com",
-            "personal_email": "johnny@gmail.com",
-            "locker_number": 1,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [1, 2, 3, 4, 5, 6, 7, 8]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 4,
-    "fields": {
-      "subject_name": "Management",
-      "professor": "Mr. Nick",
-      "grade_average": 0,
-      "students": [
-        {
-          "model": "student_app.student",
-          "pk": 1,
-          "fields": {
-            "name": "Johnny H. Miller",
-            "student_email": "johnny@school.com",
-            "personal_email": "johnny@gmail.com",
-            "locker_number": 1,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [1, 2, 3, 4, 5, 6, 7, 8]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 5,
-    "fields": {
-      "subject_name": "React",
-      "professor": "Mrs. Naranjo",
-      "grade_average": 0,
-      "students": [
-        {
-          "model": "student_app.student",
-          "pk": 1,
-          "fields": {
-            "name": "Johnny H. Miller",
-            "student_email": "johnny@school.com",
-            "personal_email": "johnny@gmail.com",
-            "locker_number": 1,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [1, 2, 3, 4, 5, 6, 7, 8]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 6,
-    "fields": {
-      "subject_name": "Django",
-      "professor": "Mrs. Corozco",
-      "grade_average": 0,
-      "students": [
-        {
-          "model": "student_app.student",
-          "pk": 1,
-          "fields": {
-            "name": "Johnny H. Miller",
-            "student_email": "johnny@school.com",
-            "personal_email": "johnny@gmail.com",
-            "locker_number": 1,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [1, 2, 3, 4, 5, 6, 7, 8]
-          }
-        },
-        {
-          "model": "student_app.student",
-          "pk": 2,
-          "fields": {
-            "name": "Michelle B. Maraca",
-            "student_email": "michelle@school.com",
-            "personal_email": "michelle@gmail.com",
-            "locker_number": 110,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [2, 6, 7]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 7,
-    "fields": {
-      "subject_name": "Csharp",
-      "professor": "Mr. Zack",
-      "grade_average": 0,
-      "students": [
-        {
-          "model": "student_app.student",
-          "pk": 1,
-          "fields": {
-            "name": "Johnny H. Miller",
-            "student_email": "johnny@school.com",
-            "personal_email": "johnny@gmail.com",
-            "locker_number": 1,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [1, 2, 3, 4, 5, 6, 7, 8]
-          }
-        },
-        {
-          "model": "student_app.student",
-          "pk": 2,
-          "fields": {
-            "name": "Michelle B. Maraca",
-            "student_email": "michelle@school.com",
-            "personal_email": "michelle@gmail.com",
-            "locker_number": 110,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [2, 6, 7]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 8,
-    "fields": {
-      "subject_name": "Physical Education",
-      "professor": "Mr. Dennis",
-      "grade_average": 0,
-      "students": [
-        {
-          "model": "student_app.student",
-          "pk": 1,
-          "fields": {
-            "name": "Johnny H. Miller",
-            "student_email": "johnny@school.com",
-            "personal_email": "johnny@gmail.com",
-            "locker_number": 1,
-            "locker_combination": "12-12-12",
-            "good_student": true,
-            "subjects": [1, 2, 3, 4, 5, 6, 7, 8]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "model": "subject_app.subject",
-    "pk": 9,
-    "fields": {
-      "subject_name": "Science",
-      "professor": "Mrs. Alex",
-      "grade_average": 0,
-      "students": []
-    }
-  }
+    {
+        "subject_name": "Python",
+        "professor": "Professor Adam",
+        "students": 6,
+        "grade_average": 54.05,
+    },
+    {
+        "subject_name": "Javascript",
+        "professor": "Professor Zaynab",
+        "students": 4,
+        "grade_average": 41.33,
+    },
+    {
+        "subject_name": "C#",
+        "professor": "Professor Benjamin",
+        "students": 6,
+        "grade_average": 42.54,
+    },
+    {
+        "subject_name": "History",
+        "professor": "Professor Nick",
+        "students": 5,
+        "grade_average": 25.39,
+    },
+    {
+        "subject_name": "Philosophy",
+        "professor": "Professor Avila",
+        "students": 5,
+        "grade_average": 51.37,
+    },
 ]
 ```
 
