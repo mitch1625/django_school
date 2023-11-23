@@ -483,3 +483,7 @@ Delete all the test files inside of each individual application. Add the `tests`
 - `.` means a test passed
 - `E` means an unhandled error populated on a test
 - `F` means a test completely failed to run
+
+## Considerations
+
+You just made some changes to your student model, meaning you may have to adjust your tests regarding `serializers` to match the new output. Ensure to write serializers and validators to the best of your ability

@@ -5,7 +5,7 @@ from .validators import (
     validate_name_format,
     validate_school_email,
 )
-
+from subject_app.models import Subject
 
 # Create your models here.
 class Student(models.Model):
@@ -31,3 +31,18 @@ class Student(models.Model):
         validators=[validate_combination_format],
     )
     good_student = models.BooleanField(default=True)
+    subjects = models.ManyToManyField(Subject, related_name='students')
+
+    def add_subject(self, subject_id):
+        subject_length = self.subjects.count()
+        if subject_length < 8:
+            self.subjects.add(subject_id)
+        else:
+            raise Exception("This students class schedule is full!")
+        
+    def remove_subject(self, subject_id):
+        subject_length = self.subjects.count()
+        if subject_length > 0:
+            self.subjects.remove(subject_id)
+        else:
+            raise Exception("This students class schedule is empty!")
